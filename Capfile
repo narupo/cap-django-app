@@ -34,15 +34,14 @@ The options are:
     exec("cap cp -r myapp :myapp")
 
     // Bake files
-    puts("Bake...")
+    puts("Bake template files...")
     exec("cap bake :myapp/models.py --models " + ms)
     exec("cap bake :myapp/admin.py --models " + ms)
     exec("cap bake :myapp/views.py --app-name " + n)
 
-
     // Install application (edit settings.py)
-    puts("Install application...")
     if p and il:
+        puts("Install application...")
         txt = "    '" + n + "',\n"
         exec("cap insert :" + p + "/settings.py \"" + txt + "\" --after " + il)
     end
