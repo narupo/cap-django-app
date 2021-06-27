@@ -27,6 +27,7 @@ $ cd mysite
 And Execute `Capfile` for build.
 
 ```
+$ # Build application
 $ cap build --models Article,Comment
 $ ls
 ```
