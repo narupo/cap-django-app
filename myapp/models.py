@@ -1,16 +1,16 @@
 {@
-	ms = opts.get("m") or opts.get("models")
-	names = []
-	if ms:
-		names = ms.split(",")
-	end
+    ms = opts.get("m") or opts.get("models")
+    names = []
+    if ms:
+        names = ms.split(",")
+    end
 @}from django.db import models
 
 
 {@
-	for i = 0; i < len(names); i += 1:
-		n = names[i]
-		N = names[i]
+    for i = 0; i < len(names); i += 1:
+        n = names[i]
+        N = names[i]
 @}class {: N :}(models.Model):
     TODO = models.CharField(max_length=255, help_text='TODO')
     created = models.DateTimeField(auto_now_add=True, help_text='作成日')
@@ -26,6 +26,6 @@
 
 
 {@
-	end
+    end
 @}
 
