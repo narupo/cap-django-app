@@ -10,7 +10,6 @@ The options are:
     
     -h, --help             show usage
     -m, --models           model names (CSV format e.g Post,Article)
-    -p, --project-name     Django project name
     -i, --install-label    The label of insert position in settings.py
 ")
         exit(0)
