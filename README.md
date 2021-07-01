@@ -21,13 +21,12 @@ Next, Create Django project and move to that project directory.
 ```
 $ # Create Django project
 $ django-admin startproject mysite
-$ cd mysite
 ```
 
 And Execute `Capfile` for build.
 
 ```
 $ # Build application
-$ cap build --models Article,Comment
+$ cap build mysite blogapp --models Article,Comment
 $ ls
 ```
